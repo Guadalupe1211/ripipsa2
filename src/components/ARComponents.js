@@ -17,7 +17,7 @@ const ARComponents = () => {
             
             try {
                 //const { data } = await axios.get('http://localhost:2023/api/load-object/1');
-                const { data } = await axios.get(`http://${NgrokUrl}/api/load-object/${id_objeto}`);
+                const { data } = await axios.get(`https://${NgrokUrl}/api/load-object/${id_objeto}`);
                 console.log(data.mtlUrl)
                 setMtlUrl (data.mtlUrl)
                 setObjUrl (data.objUrl)
